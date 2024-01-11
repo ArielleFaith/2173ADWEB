@@ -1,0 +1,18 @@
+<p> {{title}}</p>
+
+<input type="text" [value]="clientName"/>
+<p [style.color]="myColor"> Text color was styled using style binding!</p>
+
+<p [class]="appliedCSS" > This line applied the *myClass* property. </p>
+<p [class.pink]="notAppliedCSS">While this does not</p>
+
+<!-- EVENT BINDING -->
+
+<button (click)="showData($event)"> Click Here </button>
+<button on-click="showData($event)"> Click Here</button>
+
+<!-- EXAMPLE BUTTONG ()-->
+
+<h2> Example 1 </h2>
+<button (click)="clickMe()">Click Me</button>
+<p> You have clicked: {{clickCount}}</p>
