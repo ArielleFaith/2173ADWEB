@@ -1,0 +1,23 @@
+<p>data-binding works!</p>
+
+<!--  Style Binding --> 
+<p [style.color]="myColor">This text is styled using style binding.</p> 
+
+<!-- make sure to add CSS styling to apply style, since the binding will read the boolean value --> 
+<p [class]="appliedCSSClass">This text is styled using style binding.</p> 
+<p [class.blue]="nonappliedCSSClass">No style binding applied in this line.</p> 
+
+<!-- Two-Way data binding demo below --> 
+<!-- Event Binding includes mouse click, double click, hover and other keyboard and mouse actions -->
+
+<hr>
+<h2>Two-way data binding demo</h2> 
+<button (click)="showData($event)">Click Me!</button> 
+<button on-click="showData($event)">Click Me Too!</button> 
+<hr> 
+
+<h2>Two-way data binding demo (Using Functions)</h2> 
+<button (click)="getMessage('Hello World!')">Click to reveal the secret message!</button> 
+
+
+<h2>Two-way data binding demo (More Events)</h2> 
