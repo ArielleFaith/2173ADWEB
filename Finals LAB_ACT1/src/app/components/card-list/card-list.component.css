@@ -1,0 +1,27 @@
+/* Style for the container of the cards */
+.example-card-container {
+    width: 960px; /* Fixed width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Adds spacing between cards */
+  }
+  
+  /* Style for each card */
+  .example-card {
+    width: auto; /* Set the width of each card */
+    height: 300px; /* Set the height to make it square */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    background-color: #d69999; /* Example background color */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for each card */
+  .example-card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+  }
+  
